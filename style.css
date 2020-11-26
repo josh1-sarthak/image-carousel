@@ -1,0 +1,64 @@
+body {
+    font-family: monospace;
+    text-align: center;
+}
+
+
+#frame { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: none;
+
+}
+
+#left {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#circles {
+    border: 2px solid black;
+    padding: 10px;
+    grid-column: 2/3;
+}
+
+#images {
+    border: 2px solid black;
+}
+
+#right {
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides {
+   display: none;
+}
+
+.active {
+    display: block;
+    
+}
+
+button {
+    font-size: 30px;
+}
+
+.navDot {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+
+.filledDot {
+    background-color: black;
+}
